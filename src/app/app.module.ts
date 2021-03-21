@@ -9,6 +9,8 @@ import {ProductComponent} from './product/product.component';
 import {AboutComponent} from './about/about.component';
 import {ProductCardComponent} from './product-card/product-card.component';
 import {HttpClientModule} from "@angular/common/http";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -19,11 +21,13 @@ import {HttpClientModule} from "@angular/common/http";
     AboutComponent,
     ProductCardComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        NgbModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
